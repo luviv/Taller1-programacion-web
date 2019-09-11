@@ -33,11 +33,10 @@ function handleLoad() {
         }
     }
 
-    function handleClick(event) {
-        count++;
-    
-        if(count == 1){
-            tape.classList.remove('slider__tape--inactive');
+    function handleClickIzq(event) {
+        
+        if(count > 0){
+            count--;
         }
     
         var movl = slider.offsetWidth * 1 * -count;
@@ -50,7 +49,7 @@ function handleLoad() {
     }
 
     button.addEventListener('click', handleClick);
-    buttonl.addEventListener('click', handleClick);
+    buttonl.addEventListener('click', handleClickIzq);
 }
 
 window.addEventListener('load', handleLoad);
