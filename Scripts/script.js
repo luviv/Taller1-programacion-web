@@ -55,14 +55,3 @@ function handleLoad() {
 }
 
 window.addEventListener('load', handleLoad);
-
-var objSong = URL('./CSS/stayinalive.mp3');
-
-function getReproduceButton() {
-    console.log('entra a playbutton');
-    reproduceButton = document.querySelector('.vynil__beegees button');
-    song = new sound(objSong);
-    reproduceButton.addEventListener('click', onReproduceButton);
-    console.log(reproduceButton);
-    onPlay = true;
-  };
