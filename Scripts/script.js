@@ -56,21 +56,13 @@ function handleLoad() {
 
 window.addEventListener('load', handleLoad);
 
-function audioPlayer() {
-    var audioElement = document.createElement('audio');
-    var btnPlay = document.querySelector('#beegees');
-    var btnPause = document.querySelector('#play');
+var objSong = URL('./CSS/stayinalive.mp3');
 
-    audioElement.setAttribute('src', './stayinalive.mp3');
-
-    function playAudio(event) {
-        audioElement.play();
-    }
-
-    function pauseAudio(event) {
-        audioElement.pause();
-    }
-
-    btnPlay.addEventListener('click', playAudio);
-    btnPause.addEventListener('click', pauseAudio);
-}
+function getReproduceButton() {
+    console.log('entra a playbutton');
+    reproduceButton = document.querySelector('.vynil__beegees button');
+    song = new sound(objSong);
+    reproduceButton.addEventListener('click', onReproduceButton);
+    console.log(reproduceButton);
+    onPlay = true;
+  };

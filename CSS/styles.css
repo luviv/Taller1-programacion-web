@@ -484,14 +484,46 @@ nav input[type="submit"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(80, 79, 79);
 }
 
 .contact__img{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 20px px 0px;
+    margin: 0px 20px px 0px;
 }
 
 .contact__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 70px;
+}
 
+.contact__text img {
+    width: 30%;
+}
+
+.contact__text input[type="keyword"] {
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    color: rgb(80, 79, 79);
+    font-family: "Futura Book font";
+    src: url(./Futura\ Book\ font.ttf);
+}
+
+.contact__text input[type="button"] {
+    margin: 20px 40px 0px 5px;
+    height: 25px;
+    background-color: rgb(28, 70, 152);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Futura Book font";
+    src: url(./Futura\ Book\ font.ttf);
 }
