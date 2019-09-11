@@ -50,6 +50,27 @@ function handleLoad() {
 
     button.addEventListener('click', handleClick);
     buttonl.addEventListener('click', handleClickIzq);
+
+    
 }
 
 window.addEventListener('load', handleLoad);
+
+function audioPlayer() {
+    var audioElement = document.createElement('audio');
+    var btnPlay = document.querySelector('#beegees');
+    var btnPause = document.querySelector('#play');
+
+    audioElement.setAttribute('src', './stayinalive.mp3');
+
+    function playAudio(event) {
+        audioElement.play();
+    }
+
+    function pauseAudio(event) {
+        audioElement.pause();
+    }
+
+    btnPlay.addEventListener('click', playAudio);
+    btnPause.addEventListener('click', pauseAudio);
+}

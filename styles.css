@@ -57,7 +57,7 @@ nav input[type="keyword"] {
     height: 25px;
     border-radius: 10px;
     border: none;
-    color: rgb(226, 226, 225);
+    color: rgb(80, 79, 79);
 }
 
 nav input[type="submit"] {
@@ -271,6 +271,12 @@ nav input[type="submit"] {
     justify-content: space-between;
 }
 
+.interaction__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .interaction__recordplayer {
     display: flex;
     flex-direction: column;
@@ -301,6 +307,7 @@ nav input[type="submit"] {
 .vynil__beegees p {
     font-size: 20px;
     margin: auto 0px;
+    padding: 0px 50px 0px 0px;
 }
 
 .vynil__fletwood {
@@ -311,6 +318,7 @@ nav input[type="submit"] {
 .vynil__fletwood p {
     font-size: 20px;
     margin: auto 0px;
+    padding: 0px 50px 0px 0px;
 }
 
 .vynil__tiger {
@@ -320,6 +328,7 @@ nav input[type="submit"] {
 .vynil__tiger p {
     font-size: 20px;
     margin: auto 0px;
+    padding: 0px 50px 0px 0px;
 }
 
 .imgvynil {
@@ -484,5 +493,5 @@ nav input[type="submit"] {
 }
 
 .contact__text {
-    
+
 }
